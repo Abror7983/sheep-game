@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  height: 100vh;
+  background-color: #0093E9;
+  background-image: linear-gradient(117deg, #0093E9 0%, #80D0C7 62%);
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.winner {
+  background-color: gold;
+  color: #0093E9;
+}
+
+.score {
+  font-size: 7rem;
+  font-weight: 500;
+  padding-top: 35px;
+  color: #0093E9;
+}
+
+.hidden {
+  display: none;
+}
+
+.current {
+  background-color: #0093E9;
+  width: max-content;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 160px;
+  color: white;
+  font-size: 40px;
+  padding: 15px 25px;
+}
+.current .current1, .current .current2 {
+  padding-top: 10px;
+  font-size: 40px;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1050px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 600px;
+  border-radius: 15px;
+  display: flex;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.container .player0 {
+  width: 50%;
+  border-radius: 15px 0px 0px 15px;
+  padding-top: 50px;
+}
+.container .player1 {
+  width: 50%;
+  border-radius: 0px 15px 15px 0px;
+  padding-top: 50px;
+}
+.container .buttons {
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 27px;
+  border-radius: 100px;
+  color: #444;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.container .buttons:hover {
+  animation-name: animate;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  transition: all 1s;
+}
+.container .buttons:active {
+  background-color: red;
+}
+.container .dice {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  padding: 10px 27px;
+  border-radius: 100px;
+  color: #444;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.container .dice img {
+  transform: scale(0.5);
+}
+.container .newGame {
+  top: 5%;
+}
+.container .rollDice {
+  top: 71%;
+}
+.container .hold {
+  top: 83%;
+}
+
+/*# sourceMappingURL=main.css.map */
